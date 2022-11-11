@@ -1,0 +1,48 @@
+{
+	"name": "figma-plugin-boilerplate",
+	"version": "1.0.0",
+	"description": "Figma plugin boilerplate built with Typescript, React and ESbuild",
+	"keywords": [
+		"figma",
+		"typescript",
+		"esbuild",
+		"react"
+	],
+	"author": "Zann St Pierre <mail@zann.com.au>",
+	"license": "MIT",
+	"repository": {
+		"type": "private",
+		"url": "https://github.com/zannstpierre/figma-plugin-boilerplate"
+	},
+	"scripts": {
+		"prebuild": "yarn rimraf build",
+		"build": "ts-node src/build.ts",
+		"prettier:format": "yarn prettier --write 'src/**/*.{js,jsx,ts,tsx,css,json}'"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@figma/plugin-typings": "^1.55.1",
+		"@types/node": "^18.11.9",
+		"@types/react": "^18.0.25",
+		"@types/react-dom": "^18.0.8",
+		"esbuild": "^0.15.13",
+		"liquidjs": "^9.42.1",
+		"prettier": "^2.7.1",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.8.4"
+	},
+	"figma": {
+		"name": "Figma Plugin Boilerplate",
+		"id": "000000000000",
+		"api": "1.0.0",
+		"main": "main.js",
+		"ui": "ui.html",
+		"editorType": [
+			"figma"
+		]
+	}
+}

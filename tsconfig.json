@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "es2016",
+		"jsx": "react",
+		"experimentalDecorators": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"baseUrl": "./",
+		"paths": {
+			"*": ["src/*"]
+		},
+		"typeRoots": [
+			"./node_modules/@types",
+			"./node_modules/@figma"
+		],
+		"removeComments": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false,
+		"skipLibCheck": true
+	}
+}
